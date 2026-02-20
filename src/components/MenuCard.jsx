@@ -11,7 +11,7 @@ export default function MenuCard({ image, name, price, description, popular }) {
       <div className="menu-card__body">
         <div className="menu-card__header">
           <h3 className="menu-card__name">{name}</h3>
-          <span className="menu-card__price">${price}</span>
+          <span className="menu-card__price">{price}</span>
         </div>
         <p className="menu-card__desc">{description}</p>
         <button className="menu-card__btn">Add to Order</button>

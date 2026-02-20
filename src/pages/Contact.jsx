@@ -66,21 +66,21 @@ export default function Contact() {
                   <div className="contact-info__icon"><FiMapPin /></div>
                   <div>
                     <strong>Address</strong>
-                    <p>42 Brew Lane, Coffee District<br />San Francisco, CA 90210</p>
+                    <p>Shop No. 7, Orbit Mall Road<br />Viman Nagar, Pune – 411 014<br />Maharashtra, India</p>
                   </div>
                 </div>
                 <div className="contact-info__card">
                   <div className="contact-info__icon"><FiPhone /></div>
                   <div>
                     <strong>Phone</strong>
-                    <p>+1 (555) 234-5678</p>
+                    <p>+91 98765 43210</p>
                   </div>
                 </div>
                 <div className="contact-info__card">
                   <div className="contact-info__icon"><FiMail /></div>
                   <div>
                     <strong>Email</strong>
-                    <p>hello@cafedelight.com</p>
+                    <p>namaste@cafedelight.in</p>
                   </div>
                 </div>
                 <div className="contact-info__card">
@@ -88,8 +88,9 @@ export default function Contact() {
                   <div>
                     <strong>Hours</strong>
                     <p>
-                      Mon–Fri: 7:00am – 9:00pm<br />
-                      Sat–Sun: 8:00am – 10:00pm
+                      Mon–Fri: 8:00 AM – 10:00 PM<br />
+                      Sat–Sun: 8:00 AM – 11:00 PM<br />
+                      Happy Hours: 3:00 PM – 6:00 PM daily
                     </p>
                   </div>
                 </div>
@@ -188,14 +189,15 @@ export default function Contact() {
             <div className="contact-address-banner__text">
               <h2>Our Location</h2>
               <p className="contact-address-banner__address">
-                42 Brew Lane, Coffee District<br />
-                San Francisco, CA 90210, USA
+                Shop No. 7, Orbit Mall Road<br />
+                Viman Nagar, Pune – 411 014<br />
+                Maharashtra, India
               </p>
               <p className="contact-address-banner__landmark">
-                Landmark: Opposite City Central Park, near the Old Clock Tower
+                Landmark: Near Phoenix Marketcity Mall, opposite Symbiosis College Gate
               </p>
               <p className="contact-address-banner__note">
-                📞 +1 (555) 234-5678 &nbsp;·&nbsp; ✉️ hello@cafedelight.com
+                📞 +91 98765 43210 &nbsp;·&nbsp; ✉️ namaste@cafedelight.in
               </p>
             </div>
           </div>

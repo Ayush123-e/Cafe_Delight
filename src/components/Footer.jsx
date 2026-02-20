@@ -63,13 +63,14 @@ export default function Footer() {
             <div className="footer__col">
               <h4 className="footer__col-title">Visit Us</h4>
               <ul className="footer__info">
-                <li><FiMapPin /> 42 Brew Lane, Coffee District, CA 90210</li>
-                <li><FiPhone /> +1 (555) 234-5678</li>
-                <li><FiMail /> hello@cafedelight.com</li>
+                <li><FiMapPin /> Shop No. 7, Orbit Mall Road, Viman Nagar, Pune – 411 014</li>
+                <li><FiPhone /> +91 98765 43210</li>
+                <li><FiMail /> namaste@cafedelight.in</li>
               </ul>
               <div className="footer__hours">
-                <p><strong>Mon–Fri:</strong> 7am – 9pm</p>
-                <p><strong>Sat–Sun:</strong> 8am – 10pm</p>
+                <p><strong>Mon–Fri:</strong> 8:00 AM – 10:00 PM</p>
+                <p><strong>Sat–Sun:</strong> 8:00 AM – 11:00 PM</p>
+                <p><strong>Happy Hours:</strong> 3:00 PM – 6:00 PM</p>
               </div>
             </div>
 
