@@ -1,15 +1,6 @@
 #  Café Delight – Where Every Sip Tells a Story
 
-<div align="center">
 
-![Café Delight](https://img.shields.io/badge/Café%20Delight-Premium%20Experience-brown?style=for-the-badge&logo=coffeescript&logoColor=white)
-![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-5.1.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![React Router](https://img.shields.io/badge/React%20Router-6.22.0-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white)
-
-*A cozy, premium café experience — Discover handcrafted coffees, teas, desserts, and snacks in a warm and welcoming atmosphere.*
-
-</div>
 
 ---
 
