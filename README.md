@@ -1,4 +1,4 @@
-# ☕ Café Delight – Where Every Sip Tells a Story
+#  Café Delight – Where Every Sip Tells a Story
 
 <div align="center">
 
@@ -13,7 +13,7 @@
 
 ---
 
-## 📌 Table of Contents
+##  Table of Contents
 
 - [Overview](#-overview)
 - [Live Pages](#-live-pages)
@@ -27,24 +27,24 @@
 
 ---
 
-## 🌟 Overview
+##  Overview
 
 **Café Delight** is a fully responsive, multi-page café website built with **React + Vite**. It showcases a premium and modern design system with smooth navigation, a curated menu, customer testimonials, an about section, and a functional contact page — all wrapped in a warm, aesthetically rich visual theme.
 
 ---
 
-## 📄 Live Pages
+##  Live Pages
 
 | Route | Page | Description |
 |-------|------|-------------|
-| `/` | 🏠 Home | Hero section, featured items, testimonials carousel |
-| `/menu` | 🍽️ Menu | Full café menu with cards by category |
-| `/about` | 🧑‍🍳 About | Story, gallery, team section |
-| `/contact` | 📬 Contact | Contact form and café location info |
+| `/` |  Home | Hero section, featured items, testimonials carousel |
+| `/menu` |  Menu | Full café menu with cards by category |
+| `/about` |  About | Story, gallery, team section |
+| `/contact` |  Contact | Contact form and café location info |
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Technology | Version | Purpose |
 |---|---|---|
@@ -59,7 +59,7 @@
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Cafe_Website/
@@ -101,23 +101,19 @@ Cafe_Website/
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🏠 **Hero Section** — Stunning landing with CTA and brand messaging
-- 🍰 **Menu Cards** — Categorized food & beverage items with rich visuals
-- 💬 **Testimonial Carousel** — Auto-scrolling customer stories/reviews
-- 📖 **About Page** — Café story, visual gallery, and team showcase
-- 📬 **Contact Page** — Contact form with café address, hours, and map info
-- 🔝 **Scroll to Top** — Smooth scroll-to-top on every route change
-- 📱 **Fully Responsive** — Mobile-first design across all pages
-- 🎨 **Premium Design** — Playfair Display + Inter typography, warm color palette
-- ⚡ **Lightning Fast** — Powered by Vite for instant HMR and optimized builds
-- 🔗 **SPA Routing** — Seamless page transitions with React Router DOM
+-  **Hero Section** — Stunning landing with CTA and brand messaging
+-  **Menu Cards** — Categorized food & beverage items with rich visuals
+-  **Testimonial Carousel** — Auto-scrolling customer stories/reviews
+-  **About Page** — Café story, visual gallery, and team showcase
+-  **Contact Page** — Contact form with café address, hours, and map info
+-  **Scroll to Top** — Smooth scroll-to-top on every route change
+-  **Fully Responsive** — Mobile-first design across all pages
+-  **Premium Design** — Playfair Display + Inter typography, warm color palette
+-  **Lightning Fast** — Powered by Vite for instant HMR and optimized builds
+-  **SPA Routing** — Seamless page transitions with React Router DOM
 
----
 
-<div align="center">
 
-Made with ❤️ and ☕ by **Ayush Kumar**
 
-</div>
