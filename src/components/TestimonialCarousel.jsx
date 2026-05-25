@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
+import SafeImage from './SafeImage'
 import './TestimonialCarousel.css'
 
 const TESTIMONIALS = [
@@ -75,7 +76,7 @@ export default function TestimonialCarousel() {
           <blockquote className="testimonial__text">"{t.text}"</blockquote>
           <div className="testimonial__author">
             <div className="testimonial__avatar">
-              <img src={t.avatar} alt={t.name} className="testimonial__avatar-img" />
+              <SafeImage src={t.avatar} alt={t.name} className="testimonial__avatar-img" />
             </div>
             <div>
               <p className="testimonial__name">{t.name}</p>

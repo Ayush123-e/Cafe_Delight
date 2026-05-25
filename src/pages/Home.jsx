@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { FiArrowRight, FiCoffee, FiStar, FiCalendar } from 'react-icons/fi'
 import TestimonialCarousel from '../components/TestimonialCarousel'
+import SafeImage from '../components/SafeImage'
 import './Home.css'
 
 /* --- Featured Items Data --- */
@@ -55,7 +56,7 @@ const OFFERS = [
     tag: 'Monthly Event',
     title: 'Latte Art Masterclass',
     desc: 'Join our barista for a 90-min hands-on latte art workshop. Last Friday each month.',
-    image: 'https://www.artisancoffeeschool.co.uk/wp-content/uploads/2023/10/ACS_Classes_1x1_LatteArtMC.jpg', // ← paste your image URL here
+    image: 'https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=600&auto=format&fit=crop', // ← paste your image URL here
     color: '#5B8FB0',
   },
 ]
@@ -107,7 +108,7 @@ export default function Home() {
       <section className="hero">
         <div className="hero__bg" aria-hidden="true">
           {/* Hero background image – paste your café scene image URL below */}
-          <img
+          <SafeImage
             src="https://assets.architecturaldigest.in/photos/63c658b88df6b9fdb924d938/master/w_1600%2Cc_limit/Maai-10.jpg" 
             alt="Café Delight interior"
             className="hero__bg-img"
@@ -176,7 +177,7 @@ export default function Home() {
                 style={{ animationDelay: `${idx * 0.15}s`, '--card-accent': item.color }}
               >
                 <div className="home-featured__card-img-wrap">
-                  <img
+                  <SafeImage
                     src={item.image}
                     alt={item.name}
                     className="home-featured__card-img"
@@ -236,7 +237,7 @@ export default function Home() {
                 style={{ '--offer-color': offer.color, animationDelay: `${idx * 0.15}s` }}
               >
                 <div className="home-offers__img-wrap">
-                  <img
+                  <SafeImage
                     src={offer.image}
                     alt={offer.title}
                     className="home-offers__img"
@@ -277,24 +278,46 @@ export default function Home() {
           </div>
           <div className="home-gallery__grid">
             {[
-              { image: 'https://www.exoticgroup.mu/media/v0zciqj2/1.jpg?anchor=center&mode=crop&width=681&height=560&rnd=133724395564900000', label: 'Artisan Coffee' },   // ← paste image URL
-              { image: 'https://butterflyayurveda.com/cdn/shop/articles/Natural_Delights_of_Herbal_Tea_for_Health_and_Wellness.jpg?v=1689661898', label: 'Herbal Teas' },       // ← paste image URL
-              { image: 'https://images.stockcake.com/public/b/8/b/b8bca4f2-33d0-40cb-a267-d57d747713cc_large/assorted-breakfast-pastries-stockcake.jpg', label: 'Fresh Pastries' },    // ← paste image URL
-              { image: 'https://www.dessertfortwo.com/wp-content/uploads/2018/11/Chocolate-Mousse-Cake-12-735x1103.jpg', label: 'Desserts' },          // ← paste image URL
-              { image: 'https://www.commercialdesignindia.com/cloud/2025/08/30/Untitled-design.png', label: 'Cozy Corners' },      // ← paste image URL
-              { image: 'https://cdn.prod.website-files.com/63d06722a6f6c82db2e3292f/64e75c6c5e7e3d584cdaff62_AdobeStock_300876957.jpeg', label: 'Special Events' },    // ← paste image URL
-            ].map((g, i) => (
-              <div className="home-gallery__item" key={i}>
-                <img
-                  src={g.image}
-                  alt={g.label}
-                  className="home-gallery__item-img"
-                />
-                <div className="home-gallery__item-overlay">
-                  <span>{g.label}</span>
+              { image: 'https://images.unsplash.com/photo-1507133750040-4a8f57021571?q=80&w=600&auto=format&fit=crop', label: 'Artisan Coffee' },
+              { image: 'https://butterflyayurveda.com/cdn/shop/articles/Natural_Delights_of_Herbal_Tea_for_Health_and_Wellness.jpg?v=1689661898', label: 'Herbal Teas' },
+              { image: 'https://images.stockcake.com/public/b/8/b/b8bca4f2-33d0-40cb-a267-d57d747713cc_large/assorted-breakfast-pastries-stockcake.jpg', label: 'Fresh Pastries' },
+              { image: 'https://www.dessertfortwo.com/wp-content/uploads/2018/11/Chocolate-Mousse-Cake-12-735x1103.jpg', label: 'Desserts' },
+              { image: 'https://www.commercialdesignindia.com/cloud/2025/08/30/Untitled-design.png', label: 'Cozy Corners' },
+              { image: 'https://cdn.prod.website-files.com/63d06722a6f6c82db2e3292f/64e75c6c5e7e3d584cdaff62_AdobeStock_300876957.jpeg', label: 'Special Events' },
+            ].map((g, i) => {
+              if (i === 0) {
+                return (
+                  <div className="home-gallery__item home-gallery__item--featured" key={i}>
+                    <SafeImage
+                      src={g.image}
+                      alt={g.label}
+                      className="home-gallery__item-img object-cover w-full h-full"
+                    />
+                    <div className="home-gallery__featured-overlay">
+                      <h3 className="home-gallery__featured-title">{g.label}</h3>
+                      <p className="home-gallery__featured-desc">
+                        Our master baristas expertly roast and brew small-batch, single-origin beans. Taste the meticulous care and rich flavor profile in every cup.
+                      </p>
+                      <Link to="/about" className="home-gallery__featured-link">
+                        LEARN MORE
+                      </Link>
+                    </div>
+                  </div>
+                )
+              }
+              return (
+                <div className="home-gallery__item" key={i}>
+                  <SafeImage
+                    src={g.image}
+                    alt={g.label}
+                    className="home-gallery__item-img"
+                  />
+                  <div className="home-gallery__item-overlay">
+                    <span>{g.label}</span>
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
           <div style={{ textAlign: 'center', marginTop: '32px' }}>
             <Link to="/about" className="btn-secondary">

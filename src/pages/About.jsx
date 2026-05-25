@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FiArrowRight, FiHeart, FiStar, FiUsers } from 'react-icons/fi'
+import SafeImage from '../components/SafeImage'
 import './About.css'
 
 function useInView(threshold = 0.2) {
@@ -93,7 +94,7 @@ export default function About() {
           <div className={`about-story__grid${storyInView ? ' in-view' : ''}`}>
             <div className="about-story__visual">
               <div className="about-story__img-main">
-                <img
+                <SafeImage
                   src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&h=500&fit=crop"
                   alt="Café interior"
                   className="about-story__img-photo"
@@ -101,7 +102,7 @@ export default function About() {
                 <div className="about-story__img-caption">Est. 2010, Coffee District</div>
               </div>
               <div className="about-story__img-accent">
-                <img
+                <SafeImage
                   src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=300&h=250&fit=crop"
                   alt="Fresh coffee"
                   className="about-story__img-photo"
@@ -156,7 +157,7 @@ export default function About() {
                 className="about-gallery__item"
                 style={{ animationDelay: `${i * 0.1}s` }}
               >
-                <img
+                <SafeImage
                   src={item.image}
                   alt={item.label}
                   className="about-gallery__item-img"
@@ -204,7 +205,7 @@ export default function About() {
             {TEAM.map((member, i) => (
               <div className="about-team__card" key={i} style={{ animationDelay: `${i * 0.15}s` }}>
                 <div className="about-team__avatar-wrap">
-                  <img
+                  <SafeImage
                     src={member.image}
                     alt={member.name}
                     className="about-team__avatar-img"

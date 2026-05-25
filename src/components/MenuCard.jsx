@@ -1,11 +1,12 @@
 import React from 'react'
+import SafeImage from './SafeImage'
 import './MenuCard.css'
 
 export default function MenuCard({ image, name, price, description, popular }) {
   return (
     <div className="menu-card">
       <div className="menu-card__img-wrap">
-        <img src={image} alt={name} loading="lazy" />
+        <SafeImage src={image} alt={name} loading="lazy" />
         {popular && <span className="badge badge-popular menu-card__badge">★ Popular</span>}
       </div>
       <div className="menu-card__body">
